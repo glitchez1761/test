@@ -1,0 +1,14 @@
+.contact-flex { display: flex; gap: 4rem; flex-wrap: wrap; }
+
+.contact-info { flex: 1; min-width: 300px; }
+.contact-form { flex: 1.5; min-width: 300px; }
+
+.form-group { margin-bottom: 1.5rem; }
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+.form-group input:focus { border-color: var(--color-primary); outline: none; }

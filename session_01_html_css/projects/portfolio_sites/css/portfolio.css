@@ -1,0 +1,41 @@
+.portfolio-filters { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; }
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.filter-btn:hover { background: var(--color-primary); color: white; }
+
+.portfolio-flex { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+
+.portfolio-item {
+    width: calc(33.333% - 1rem); /* Chia 3 cột */
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.portfolio-item img { width: 100%; display: block; transition: transform 0.4s ease; }
+.portfolio-item:hover img { transform: scale(1.1); }
+
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 41, 59, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay { opacity: 1; }
+
+@media screen and (max-width: 768px) {
+    .portfolio-item { width: 100%; }
+}
